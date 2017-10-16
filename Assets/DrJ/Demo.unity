@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 62374156}
   - component: {fileID: 62374158}
   - component: {fileID: 62374157}
+  - component: {fileID: 62374160}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -139,11 +140,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 197.99963, y: 281.24957}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
-  zoom: 1
+  blockViewHeight: 297
+  zoom: 0.40000045
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -201,7 +202,8 @@ MonoBehaviour:
   blockName: New Block
   description: 
   eventHandler: {fileID: 62374157}
-  commandList: []
+  commandList:
+  - {fileID: 62374160}
 --- !u!4 &62374159
 Transform:
   m_ObjectHideFlags: 0
@@ -215,6 +217,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &62374160
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1
+  indentLevel: 0
+  storyText: Hello Fungus
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
 --- !u!1 &599236160
 GameObject:
   m_ObjectHideFlags: 1
