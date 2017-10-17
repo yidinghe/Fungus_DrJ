@@ -124,6 +124,11 @@ GameObject:
   - component: {fileID: 62374163}
   - component: {fileID: 62374162}
   - component: {fileID: 62374164}
+  - component: {fileID: 62374166}
+  - component: {fileID: 62374165}
+  - component: {fileID: 62374168}
+  - component: {fileID: 62374167}
+  - component: {fileID: 62374169}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -147,7 +152,7 @@ MonoBehaviour:
   scrollPos: {x: 201.68796, y: 107.877205}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 297
+  blockViewHeight: 407
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -157,7 +162,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 62374158}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 62374169}
   variables: []
   description: 
   stepPause: 0
@@ -208,11 +214,16 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 62374157}
   commandList:
+  - {fileID: 62374166}
+  - {fileID: 62374165}
   - {fileID: 62374160}
   - {fileID: 62374161}
+  - {fileID: 62374168}
   - {fileID: 62374163}
   - {fileID: 62374164}
+  - {fileID: 62374167}
   - {fileID: 62374162}
+  - {fileID: 62374169}
 --- !u!4 &62374159
 Transform:
   m_ObjectHideFlags: 0
@@ -278,7 +289,7 @@ MonoBehaviour:
   indentLevel: 0
   duration: 4
   targetView: {fileID: 782592499}
-  waitUntilFinished: 1
+  waitUntilFinished: 0
   targetCamera: {fileID: 0}
 --- !u!114 &62374163
 MonoBehaviour:
@@ -314,6 +325,113 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 1
   durationOLD: 0
+--- !u!114 &62374165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10cd462c89cb047158ccfb8a8df3f60a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  spriteRenderer: {fileID: 928977574}
+  _visible:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  affectChildren: 1
+  visibleOLD: 0
+--- !u!114 &62374166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10cd462c89cb047158ccfb8a8df3f60a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  spriteRenderer: {fileID: 1832282763}
+  _visible:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  affectChildren: 1
+  visibleOLD: 0
+--- !u!114 &62374167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  spriteRenderer: {fileID: 928977574}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 0}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &62374168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  spriteRenderer: {fileID: 928977574}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 6
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &62374169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  spriteRenderer: {fileID: 1832282763}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 6
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &393527107
 GameObject:
   m_ObjectHideFlags: 0
