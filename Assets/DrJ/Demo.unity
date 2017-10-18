@@ -171,7 +171,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 62374158}
   selectedCommands:
-  - {fileID: 62374176}
+  - {fileID: 62374169}
   variables: []
   description: 
   stepPause: 0
@@ -393,7 +393,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 928977574}
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 2
+    floatVal: 6
   _targetColor:
     colorRef: {fileID: 0}
     colorVal: {r: 1, g: 1, b: 1, a: 0}
@@ -416,7 +416,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 928977574}
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 6
+    floatVal: 10
   _targetColor:
     colorRef: {fileID: 0}
     colorVal: {r: 1, g: 1, b: 1, a: 1}
@@ -1192,7 +1192,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 958324519}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.5, y: 2.37, z: 0}
+  m_LocalPosition: {x: -7.4, y: 3.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1798988483}
