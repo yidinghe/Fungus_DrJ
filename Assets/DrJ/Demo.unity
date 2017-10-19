@@ -324,7 +324,6 @@ GameObject:
   - component: {fileID: 62374199}
   - component: {fileID: 62374202}
   - component: {fileID: 62374201}
-  - component: {fileID: 62374188}
   - component: {fileID: 62374206}
   - component: {fileID: 62374205}
   - component: {fileID: 62374204}
@@ -347,6 +346,7 @@ GameObject:
   - component: {fileID: 62374221}
   - component: {fileID: 62374223}
   - component: {fileID: 62374224}
+  - component: {fileID: 62374188}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -367,11 +367,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 112.58001, y: 99.823265}
+  scrollPos: {x: -86.14374, y: 39.966248}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 384
-  zoom: 0.8699609
+  zoom: 0.8999609
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -379,9 +379,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 62374197}
-  selectedCommands:
-  - {fileID: 62374224}
+  - {fileID: 62374189}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -440,7 +439,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 62374177}
   - {fileID: 62374176}
-  - {fileID: 62374172}
   - {fileID: 62374166}
   - {fileID: 62374175}
   - {fileID: 62374165}
@@ -453,6 +451,7 @@ MonoBehaviour:
   - {fileID: 62374162}
   - {fileID: 62374169}
   - {fileID: 62374173}
+  - {fileID: 62374172}
   - {fileID: 62374174}
 --- !u!4 &62374159
 Transform:
@@ -677,7 +676,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 228
     y: 71.5
-    width: 120
+    width: 123.336525
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1048,7 +1047,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &62374188
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62374155}
@@ -1525,7 +1524,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.04187
     y: 218.58185
-    width: 120
+    width: 120.003044
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1985,7 +1984,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &62374224
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62374155}
