@@ -380,6 +380,10 @@ GameObject:
   - component: {fileID: 62374256}
   - component: {fileID: 62374255}
   - component: {fileID: 62374249}
+  - component: {fileID: 62374258}
+  - component: {fileID: 62374259}
+  - component: {fileID: 62374260}
+  - component: {fileID: 62374261}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -413,7 +417,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 62374246}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 62374261}
   variables: []
   description: 
   stepPause: 0
@@ -2385,6 +2390,8 @@ MonoBehaviour:
   eventHandler: {fileID: 62374243}
   commandList:
   - {fileID: 62374244}
+  - {fileID: 62374258}
+  - {fileID: 62374259}
 --- !u!114 &62374243
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2490,6 +2497,8 @@ MonoBehaviour:
   eventHandler: {fileID: 62374247}
   commandList:
   - {fileID: 62374248}
+  - {fileID: 62374260}
+  - {fileID: 62374261}
 --- !u!114 &62374247
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2539,7 +2548,7 @@ MonoBehaviour:
   amountOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &62374249
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62374155}
@@ -2556,7 +2565,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &62374250
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62374155}
@@ -2609,7 +2618,7 @@ MonoBehaviour:
   - {fileID: 62374252}
 --- !u!114 &62374252
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62374155}
@@ -2625,7 +2634,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &62374253
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62374155}
@@ -2642,7 +2651,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &62374254
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62374155}
@@ -2655,7 +2664,7 @@ MonoBehaviour:
   draggableObject: {fileID: 921065743}
 --- !u!114 &62374255
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62374155}
@@ -2671,7 +2680,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &62374256
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62374155}
@@ -2708,7 +2717,7 @@ MonoBehaviour:
   toScaleOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &62374257
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62374155}
@@ -2720,6 +2729,156 @@ MonoBehaviour:
   parentBlock: {fileID: 62374250}
   draggableObject: {fileID: 921065743}
   targetObject: {fileID: 1580642227}
+--- !u!114 &62374258
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 665e8847cab3749f597622c6c52997ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 90
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1580642226}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.2
+  easeType: 2
+  loopType: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 0
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _toTransform:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  _toScale:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: -1, y: 1.1, z: 1}
+  toTransformOLD: {fileID: 0}
+  toScaleOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &62374259
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 445c07472dafe4e0ead0e88c4b757401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 91
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1580642226}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.2
+  easeType: 2
+  loopType: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _toTransform:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  _toPosition:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 3.18, y: -4.5, z: 0}
+  isLocal: 1
+  toTransformOLD: {fileID: 0}
+  toPositionOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &62374260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 665e8847cab3749f597622c6c52997ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 92
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1580642226}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.2
+  easeType: 2
+  loopType: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 0
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _toTransform:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  _toScale:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: -1, y: 1, z: 1}
+  toTransformOLD: {fileID: 0}
+  toScaleOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &62374261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 445c07472dafe4e0ead0e88c4b757401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 93
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1580642226}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.2
+  easeType: 2
+  loopType: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _toTransform:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  _toPosition:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 3.18, y: -4.68, z: 0}
+  isLocal: 1
+  toTransformOLD: {fileID: 0}
+  toPositionOLD: {x: 0, y: 0, z: 0}
 --- !u!1 &142609722
 GameObject:
   m_ObjectHideFlags: 0
@@ -3640,7 +3799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragEnabled: 1
   returnOnCancelled: 1
-  returnOnCompleted: 1
+  returnOnCompleted: 0
   returnDuration: 1
   hoverCursor: {fileID: 0}
   useEventSystem: 0
@@ -4650,7 +4809,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03310299, y: -0.16558075}
+  m_Offset: {x: 0.03310299, y: 0.0059428215}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4661,7 +4820,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.51875114, y: 0.74563694}
+  m_Size: {x: 0.51875114, y: 1.0886841}
   m_EdgeRadius: 0
 --- !u!212 &921065746
 SpriteRenderer:
@@ -5213,7 +5372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragEnabled: 1
   returnOnCancelled: 1
-  returnOnCompleted: 1
+  returnOnCompleted: 0
   returnDuration: 1
   hoverCursor: {fileID: 0}
   useEventSystem: 0
@@ -7313,7 +7472,7 @@ Transform:
   m_GameObject: {fileID: 1580642226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.18, y: -4.68, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1633272127}
   m_RootOrder: 9
