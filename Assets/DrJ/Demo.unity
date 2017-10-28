@@ -616,6 +616,8 @@ GameObject:
   - component: {fileID: 62374446}
   - component: {fileID: 62374449}
   - component: {fileID: 62374208}
+  - component: {fileID: 62374451}
+  - component: {fileID: 62374450}
   m_Layer: 0
   m_Name: FirstSceneFlowchart
   m_TagString: Untagged
@@ -636,7 +638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -414.62503, y: -183.37569}
+  scrollPos: {x: -632.04755, y: 38.82532}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 516
@@ -647,8 +649,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 62374228}
+  selectedCommands:
+  - {fileID: 62374450}
   variables:
   - {fileID: 62374314}
   - {fileID: 62374327}
@@ -2428,6 +2432,7 @@ MonoBehaviour:
   - {fileID: 62374377}
   - {fileID: 62374376}
   - {fileID: 62374375}
+  - {fileID: 62374450}
   - {fileID: 62374381}
   - {fileID: 62374363}
   - {fileID: 62374361}
@@ -2474,6 +2479,7 @@ MonoBehaviour:
   - {fileID: 62374373}
   - {fileID: 62374372}
   - {fileID: 62374371}
+  - {fileID: 62374451}
   - {fileID: 62374382}
   - {fileID: 62374367}
   - {fileID: 62374366}
@@ -7391,6 +7397,58 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 1284181525}
+--- !u!114 &62374450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 293
+  indentLevel: 2
+  storyText: Well done. Now mix them together in the green breaker.{wc}I'll do the
+    rest.
+  description: 
+  character: {fileID: 1095138459}
+  portrait: {fileID: 21300000, guid: 8327e827b5f9649e1b699c768cf29953, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 1832170089}
+--- !u!114 &62374451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 292
+  indentLevel: 2
+  storyText: Well done. Now mix them together in the green breaker.{wc}I'll do the
+    rest.
+  description: 
+  character: {fileID: 1095138459}
+  portrait: {fileID: 21300000, guid: 8327e827b5f9649e1b699c768cf29953, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 1832170089}
 --- !u!1 &87385628
 GameObject:
   m_ObjectHideFlags: 0
