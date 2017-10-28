@@ -374,7 +374,6 @@ GameObject:
   - component: {fileID: 62374203}
   - component: {fileID: 62374207}
   - component: {fileID: 62374209}
-  - component: {fileID: 62374208}
   - component: {fileID: 62374210}
   - component: {fileID: 62374211}
   - component: {fileID: 62374216}
@@ -615,6 +614,8 @@ GameObject:
   - component: {fileID: 62374447}
   - component: {fileID: 62374448}
   - component: {fileID: 62374446}
+  - component: {fileID: 62374449}
+  - component: {fileID: 62374208}
   m_Layer: 0
   m_Name: FirstSceneFlowchart
   m_TagString: Untagged
@@ -635,7 +636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 34.555668, y: 108.11353}
+  scrollPos: {x: -414.62503, y: -183.37569}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 516
@@ -1823,8 +1824,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 169.04187
-    y: 218.58185
+    x: 398.4107
+    y: 476.6222
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1835,6 +1836,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 62374209}
+  - {fileID: 62374449}
   - {fileID: 62374208}
 --- !u!114 &62374208
 MonoBehaviour:
@@ -1844,18 +1846,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 62374155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 49
+  itemId: 291
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 62374158}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
+  text: Play Again
+  description: 
+  targetBlock: {fileID: 62374440}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 1284181525}
 --- !u!114 &62374209
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7029,8 +7032,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1716.202
-    y: 195.36949
+    x: 1732.9274
+    y: 362.6174
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7210,8 +7213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1891.186
-    y: 116.47681
+    x: 984.4631
+    y: 460.5301
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7274,8 +7277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1886.4073
-    y: 268.19458
+    x: 998.7992
+    y: 550.12665
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7367,6 +7370,27 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 4
   durationOLD: 0
+--- !u!114 &62374449
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62374155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 290
+  indentLevel: 0
+  text: Quit
+  description: 
+  targetBlock: {fileID: 62374443}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 1284181525}
 --- !u!1 &87385628
 GameObject:
   m_ObjectHideFlags: 0
