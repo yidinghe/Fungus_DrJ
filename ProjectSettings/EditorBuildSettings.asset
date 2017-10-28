@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/DrJ/Demo.unity
+    guid: e0d324b638f9a46f9b0d2b8b4b91ec5d
